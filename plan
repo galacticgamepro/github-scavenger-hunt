@@ -1,0 +1,113 @@
+Cafeteria pre-order system 
+
+Gina Jiang, Krithik Vivekananthan 
+
+PROJECT PROBLEM STATEMENT 
+
+The school cafeteria suffers from long lines during lunch, wasting student break time. The cafeteria staff also struggle to predict daily food demand. There is an opportunity to build a simple, local desktop application where a student can select a meal from a fixed menu, enter their student ID, and submit the order. The cafeteria staff can then see the submitted orders and prepare meals in advance. 
+
+CONCISE DESIGN OVERVIEW 
+
+Components: 
+
+A class containing fields for studentID, selectedItem, and totalPrice 
+
+Input validation for Student ID 
+
+Updating list showing staff the total orders placed during the active session 
+
+Dynamic list storage using ArrayList<> etc.  
+
+Text-based menu loop: a while loop paired with a switch statement that keeps the program running in the console 
+
+SCOPE STATEMENT 
+
+ 
+
+What the project includes: 
+
+A text-driven command-line interface in the IDE console 
+
+Use of custom OOP objects to handle data 
+
+Basic text/numerical validation 
+
+What the project excludes: 
+
+Graphic user interfaces 
+
+Permanent data storage 
+
+Multi-user networking 
+
+TIMELINE 
+
+Draw a timeline, including milestones to serve as the basis for a work breakdown structure (WBS) and appropriate Gantt or PERT charts. For this class, you can refer to the Work Breakdown Excel Sheet. This can be a table with anticipated tasks listed for each school day of the project. You will submit a completed chart(or Record of Tasks) along with your final deliverables. 
+
+Day 
+
+Milestone 
+
+Deliverable 
+
+Day 1–2 
+
+Write the class with constructor, getters, and setters. 
+
+Finished class file 
+
+Day 3–4 
+
+Create the main terminal console menu loop using Scanner/input(). 
+
+Functional Text Menu 
+
+Day 5–6 
+
+Write the logic to instantiate an object from user input and add it to the list. 
+
+Working Capture 
+
+Day 7–8 
+
+Code the Staff loop that iterates through the list to print summaries. 
+
+Working Print Summary 
+
+Day 9–10 
+
+Perform console test cases (handling bad inputs). 
+
+Final Console Prototype 
+
+ 
+
+TEST PLAN 
+
+Describe how you will test your solution.  The plan should include testing the whole solution and testing individual components of the solution.  Include details such as if you will automate testing or you will manually test with positive and negative test cases. 
+
+Testing is performed by typing test inputs directly into the console window 
+
+When asked to pick a menu item, the user, for example, can type 9 or apple. The console will print “invalid selection, try again” without crashing and redisplays the prompt 
+
+Whole solution test: choose 1, type ID 5543, select item Pizza. Choose option 1 again, type ID 2212, select burger.  
+
+--- Active Orders ---  
+
+1. ID: 5543 | Item: Pizza  
+
+2. ID: 2212 | Item: Burger 
+
+RISKS AND CONTINGENCY PLANS 
+
+List known and potential risks by estimated probability, with mitigation plans. 
+
+Input crash: the program expects an integer, but the user types a letter, crashing the loop 
+
+Mitigation: read all console inputs as strings instead of integers, then convert them safetly using try-catch blocks 
+
+Losing test data on restart 
+
+Inside the program’s main method, create 3 placeholder objects directly into the list to always have data to test with immediately 
+
+ 
